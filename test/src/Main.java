@@ -4,10 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] arr = generateRandomArray(15,10,0);
-        printArray(arr, arr.length);
-        ScanAllSubsets sc = new ScanAllSubsets();
-        System.out.println(ScanAllSubsets.Subsets.findPositiveSubsetWithSub(arr,80));
+
+        boolean [] orig = {false,true,false,false,true};
+        boolean [] targ = {false,false,false,false,false};
+        System.out.println(DiscoLight.Disco.disco(orig,targ));
+
+
+//        int[] arr = generateRandomArray(15,10,0);
+//        printArray(arr, arr.length);
+//        ScanAllSubsets sc = new ScanAllSubsets();
+//        System.out.println(ScanAllSubsets.Subsets.findPositiveSubsetWithSub(arr,80));
 
 
 
