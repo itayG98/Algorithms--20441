@@ -7,7 +7,7 @@ public class Main {
         int[] arr = generateRandomArray(15,10,0);
         printArray(arr, arr.length);
         ScanAllSubsets sc = new ScanAllSubsets();
-        System.out.println(ScanAllSubsets.Subsets.findPositiveSubsetWithSub(arr,15));
+        System.out.println(ScanAllSubsets.Subsets.findPositiveSubsetWithSub(arr,80));
 
 
 

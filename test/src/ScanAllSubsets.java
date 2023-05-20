@@ -3,6 +3,7 @@ public class ScanAllSubsets {
     static class Subsets {
 
         public static boolean findPositiveSubsetWithSub(int[] arr , int num){
+            System.out.println("Looking for sum :"+num);
             return findPositiveSubsetWithSub(arr,num,0);
         }
 
@@ -11,11 +12,8 @@ public class ScanAllSubsets {
                 return num == 0;
             if (num < 0)
                 return false;
-            boolean next = findPositiveSubsetWithSub(arr,num-arr[start],start+1);
-            if (next)
-                return true;
-            else
-                return findPositiveSubsetWithSub(arr,num,start+1);
+            return findPositiveSubsetWithSub(arr,num-arr[start],start+1) ||
+                    findPositiveSubsetWithSub(arr,num,start+1);
         }
     }
 }
