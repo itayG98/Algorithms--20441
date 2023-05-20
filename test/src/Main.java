@@ -4,11 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] arr = generateRandomArray(15,5,0);
-        QuickSort ob = new QuickSort();
-        ob.quickSort(arr,0,arr.length-1);
+        int[] arr = generateRandomArray(15,10,0);
         printArray(arr, arr.length);
-        System.out.println(FlatSubSet.StaticFlatSubSet.longestFlat(arr));
+        ScanAllSubsets sc = new ScanAllSubsets();
+        System.out.println(ScanAllSubsets.Subsets.findPositiveSubsetWithSub(arr,15));
+
+
+
+//        QuickSort ob = new QuickSort();
+//        ob.quickSort(arr,0,arr.length-1);
+//        printArray(arr, arr.length);
+//        System.out.println(FlatSubSet.StaticFlatSubSet.longestFlat(arr));
     }
 
     public static int[] generateRandomArray(int size , int max , int min) {
