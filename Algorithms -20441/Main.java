@@ -16,13 +16,21 @@ public class Main {
 //        System.out.println(ScanAllSubsets.Subsets.findPositiveSubsetWithSub(arr,1));
 
 
-
 //        QuickSort ob = new QuickSort();
 //        ob.quickSort(arr,0,arr.length-1);
 //        printArray(arr, arr.length);
 //        System.out.println(FlatSubSet.StaticFlatSubSet.longestFlat(arr));
 
-        System.out.println(IntegersInto751.CalcBase.oneFiveSeven(49));
+        System.out.println(IntegersInto751.CalcBase.oneFiveSeven(52));
+
+
+        String expr = "([{}])";
+
+        // Function call
+        if (BalancedBrackets.areBracketsBalanced(expr))
+            System.out.println("Balanced ");
+        else
+            System.out.println("Not Balanced ");
     }
 
     public static int[] generateRandomArray(int size , int max , int min) {
