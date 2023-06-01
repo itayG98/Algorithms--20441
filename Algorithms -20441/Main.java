@@ -10,7 +10,7 @@ public class Main {
 //        System.out.println(DiscoLight.Disco.disco(orig,targ));
 //
 //
-        int[] arr = generateRandomArray(15,10,0);
+//        int[] arr = generateRandomArray(15,10,0);
 //        printArray(arr, arr.length);
 //        ScanAllSubsets sc = new ScanAllSubsets();
 //        System.out.println(ScanAllSubsets.Subsets.findPositiveSubsetWithSub(arr,1));
@@ -21,16 +21,21 @@ public class Main {
 //        printArray(arr, arr.length);
 //        System.out.println(FlatSubSet.StaticFlatSubSet.longestFlat(arr));
 
-        System.out.println(IntegersInto751.CalcBase.oneFiveSeven(52));
+//        System.out.println(IntegersInto751.CalcBase.oneFiveSeven(52));
+//
+//
+//        String expr = "([{}])";
+//
+//        // Function call
+//        if (BalancedBrackets.areBracketsBalanced(expr))
+//            System.out.println("Balanced ");
+//        else
+//            System.out.println("Not Balanced ");
 
 
-        String expr = "([{}])";
+        int[][] mat = { {0,1,1,1 }, { 1,0,1,1} , { 1,1,0,1 }, { 1,1,1,0}} ;
 
-        // Function call
-        if (BalancedBrackets.areBracketsBalanced(expr))
-            System.out.println("Balanced ");
-        else
-            System.out.println("Not Balanced ");
+        System.out.println(friends3Question.friends3(mat));
     }
 
     public static int[] generateRandomArray(int size , int max , int min) {
