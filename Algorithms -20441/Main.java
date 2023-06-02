@@ -33,9 +33,13 @@ public class Main {
 //            System.out.println("Not Balanced ");
 
 
-        int[][] mat = { {0,1,1,1 }, { 1,0,1,1} , { 1,1,0,1 }, { 1,1,1,0}} ;
+//        int[][] mat = { {0,1,1,1 }, { 1,0,1,1} , { 1,1,0,1 }, { 1,1,1,0}} ;
+//
+//        System.out.println(friends3Question.friends3(mat));
 
-        System.out.println(friends3Question.friends3(mat));
+        //SelectedPrimesCalc.SelectedPrimes(819819000,1);
+        System.out.println(SelectedPrimesCalc.SelectedPrimes(1234567,1));
+
     }
 
     public static int[] generateRandomArray(int size , int max , int min) {

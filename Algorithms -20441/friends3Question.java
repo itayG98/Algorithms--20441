@@ -1,7 +1,7 @@
 public class friends3Question {
 
     public static int friends3(int[][] mat){
-        return friends3(mat,0 , 0 , 0, new int[3]  , 0);
+        return friends3(mat,0 , 1 , 2, new int[3]  , 0);
     }
 
     private static int friends3(int[][] mat, int i, int j, int k, int[] circle, int count) {
