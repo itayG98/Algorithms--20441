@@ -38,9 +38,43 @@ public class Main {
 //        System.out.println(friends3Question.friends3(mat));
 
         //SelectedPrimesCalc.SelectedPrimes(819819000,1);
-        System.out.println(SelectedPrimesCalc.SelectedPrimes(1234567,1));
+        //System.out.println(SelectedPrimesCalc.SelectedPrimes(1234567,1));
 
+
+        //A a1 = new A();
+        //B b1 = new B();
+        //C c1 = new C();
+
+//        intList ls = new intList();
+//        for (int i =1 ; i<7 ; i++){ls.addNode(i);}
+//        ls.printList();
+//        System.out.println("\n-------------------------------");
+//        ls = ls.secret(2);
+//        ls.printList();
+//        System.out.println("\n-------------------------------");
+//        intList ls2 = new intList();
+//        ls2.addNode(1);
+//        ls2.addNode(2);
+//        ls2.addNode(1);
+//        ls2.addNode(5);
+//        ls2.addNode(3);
+//        ls2.addNode(4);
+//        ls2.addNode(3);
+//        ls2.printList();
+//        ls.secret(3);
+//        System.out.println("\n-------------------------------");
+//        ls2.printList();
+
+        System.out.println(BalancedBrackets.countPairs(3));
     }
+
+
+
+
+
+
+
+
 
     public static int[] generateRandomArray(int size , int max , int min) {
         int[] array = new int[size];

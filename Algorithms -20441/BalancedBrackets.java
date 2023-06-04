@@ -1,8 +1,9 @@
 import java.util.Stack;
+import java.util.StringJoiner;
 
 public class BalancedBrackets {
     // function to check if brackets are balanced
-    static boolean areBracketsBalanced(String expr) {
+    public static boolean areBracketsBalanced(String expr) {
         // Using ArrayDeque is faster than using Stack class
         Stack<Character> stack = new Stack<Character>();
 
@@ -38,5 +39,25 @@ public class BalancedBrackets {
             }
         }
         return (stack.isEmpty());
+    }
+
+    public static int countPairs(int n){
+        return countPairs(n , 0 , 0 , "");
+    }
+
+    private static int countPairs(int n, int left, int leftTotal, String s) {
+
+        if (s.length() == 2*n){
+            System.out.println(s);
+            return 1;
+        }
+        if (leftTotal == n){
+            countPairs(n , left-1,leftTotal,s+")");
+            return 1;
+        }
+        if (left > 0)
+            return countPairs(n , left+1 , leftTotal+1 , s+"(") +
+                    countPairs(n , left-1,leftTotal,s+")");
+        return countPairs(n,left+1,leftTotal+1 ,s +"(");
     }
 }
