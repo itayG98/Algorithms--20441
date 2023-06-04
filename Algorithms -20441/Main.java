@@ -64,8 +64,11 @@ public class Main {
 //        ls.secret(3);
 //        System.out.println("\n-------------------------------");
 //        ls2.printList();
+//
+//        System.out.println(BalancedBrackets.countPairs(10));
 
-        System.out.println(BalancedBrackets.countPairs(3));
+        System.out.println(SuperIncQuestion.superInc(new int[]{1,4,10,40,100}, 54));
+
     }
 
 
