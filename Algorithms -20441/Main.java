@@ -67,7 +67,28 @@ public class Main {
 //
 //        System.out.println(BalancedBrackets.countPairs(10));
 
-        System.out.println(SuperIncQuestion.superInc(new int[]{1,4,10,40,100}, 54));
+//        System.out.println(SuperIncQuestion.superInc(new int[]{1,2,3,2,1}, 54));
+
+        System.out.println(KalmostSorted.kAlmostSearch(new int[]{1,2,0,0,0,3,4,5,6,7,0,0,0,10,12},4));
+
+
+        BinaryTree tree = new BinaryTree(new BinaryTreeNode(1));
+        tree.root.right = new BinaryTreeNode(3);
+        tree.root.left = new BinaryTreeNode(2);
+        tree.root.left.right = new BinaryTreeNode(5);
+        tree.root.left.right.right = new BinaryTreeNode(8);
+        tree.root.left.right.left = new BinaryTreeNode(7);
+        tree.root.left.right.left.right = new BinaryTreeNode(9);
+        tree.root.left.left = new BinaryTreeNode(4);
+        tree.root.left.left.left = new BinaryTreeNode(6);
+
+        tree.printInorder();
+
+        System.out.println("\n"+BinaryTree.f(tree.root));
+        System.out.println("\n"+BinaryTree.secret(tree.root));
+
+        BinaryTree tree2 = new BinaryTree(BinaryTree.what(new int[] {2,3,4,7,9,12,13,14}));
+        tree2.printInorder();
 
     }
 
