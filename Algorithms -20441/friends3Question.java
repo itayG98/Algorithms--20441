@@ -1,24 +1,21 @@
 public class friends3Question {
 
     public static int friends3(int[][] mat){
-        return friends3(mat,0 , 1 , 2, new int[3]  , 0);
+        return friends3(mat,0 , 1 , 2  , 0);
     }
 
-    private static int friends3(int[][] mat, int i, int j, int k, int[] circle, int count) {
+    private static int friends3(int[][] mat, int i, int j, int k, int count) {
         if (i == mat.length)
             return count;
         if (j == mat.length)
-            return friends3(mat,i+1,0,0,circle,count);
+            return friends3(mat,i+1,0,0,count);
         if (k == mat.length)
-            return friends3(mat,i,j+1,0,circle,count);
+            return friends3(mat,i,j+1,0,count);
         if(i<j && j<k && mat[i][j] == 1 && mat[j][k] == 1 && mat[k][i]==1){
-            circle[0] = i;
-            circle[1] = j;
-            circle[2] = k;
-            System.out.println(circle[0]+","+circle[1]+","+circle[2]);
+            System.out.println(i+","+j+","+k);
             count++;
         }
-        return friends3(mat,i,j,k+1,circle,count);
+        return friends3(mat,i,j,k+1,count);
     }
 
 

@@ -33,9 +33,9 @@ public class Main {
 //            System.out.println("Not Balanced ");
 
 
-//        int[][] mat = { {0,1,1,1 }, { 1,0,1,1} , { 1,1,0,1 }, { 1,1,1,0}} ;
-//
-//        System.out.println(friends3Question.friends3(mat));
+        int[][] mat = { {0,1,1,1 }, { 1,0,1,1} , { 1,1,0,1 }, { 1,1,1,0}} ;
+
+        System.out.println(friends3Question.friends3(mat));
 
         //SelectedPrimesCalc.SelectedPrimes(819819000,1);
         //System.out.println(SelectedPrimesCalc.SelectedPrimes(1234567,1));
@@ -69,6 +69,7 @@ public class Main {
 
 //        System.out.println(SuperIncQuestion.superInc(new int[]{1,2,3,2,1}, 54));
 
+/*
         System.out.println(KalmostSorted.kAlmostSearch(new int[]{1,2,0,0,0,3,4,5,6,7,0,0,0,10,12},4));
 
 
@@ -89,7 +90,9 @@ public class Main {
 
         BinaryTree tree2 = new BinaryTree(BinaryTree.what(new int[] {2,3,4,7,9,12,13,14}));
         tree2.printInorder();
+*/
 
+//        System.out.println(longestSeq.longestSequemce(new int[] {0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,1},2));
     }
 
 
