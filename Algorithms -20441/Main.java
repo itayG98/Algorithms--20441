@@ -33,9 +33,9 @@ public class Main {
 //            System.out.println("Not Balanced ");
 
 
-        int[][] mat = { {0,1,1,1 }, { 1,0,1,1} , { 1,1,0,1 }, { 1,1,1,0}} ;
-
-        System.out.println(friends3Question.friends3(mat));
+//        int[][] mat = { {0,1,1,1 }, { 1,0,1,1} , { 1,1,0,1 }, { 1,1,1,0}} ;
+//
+//        System.out.println(friends3Question.friends3(mat));
 
         //SelectedPrimesCalc.SelectedPrimes(819819000,1);
         //System.out.println(SelectedPrimesCalc.SelectedPrimes(1234567,1));
@@ -93,6 +93,25 @@ public class Main {
 */
 
 //        System.out.println(longestSeq.longestSequemce(new int[] {0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,1},2));
+
+        int[][] matrix = {
+                {1, 0, 0, 0, 0},
+                {0, 1, 1, 0, 0},
+                {0, 0, 1, 0, 0},
+                {0, 0, 0, 1, 0},
+                {0, 0, 0, 0, 1}
+        };
+        int[][] matrix2 = {
+                {1 ,0, 0, 0, 0},
+                {0, 1, 0, 0, 0},
+                {0, 0, 1, 1, 0},
+                {1, 0, 0, 1, 0},
+                {0, 0, 0, 0, 1}
+        };
+        System.out.println(IdentityMat.isIdentity(matrix,1,3)); //False
+        System.out.println(IdentityMat.isIdentity(matrix,2,2)); //True
+        System.out.println(IdentityMat.isIdentity(matrix2,3,2)); //True
+        System.out.println(IdentityMat.isIdentity(matrix2,0,5)); //False
     }
 
 
